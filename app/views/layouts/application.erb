@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>RPX Now Example app</title>
+    <%= stylesheet_link_tag 'reset', 'base' %>
+  </head>
+  <body>
+    <div>
+      <div><%= link_to 'Home', '/' %></div>
+      <div><%= render 'layouts/user' %></div>
+      <%= render 'layouts/flash' %>
+    </div>
+
+    <div><%= yield %></div>
+  </body>
+</html>

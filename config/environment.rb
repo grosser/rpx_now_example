@@ -5,3 +5,6 @@ require File.join(File.dirname(__FILE__), 'boot')
 Rails::Initializer.run do |config|
   config.time_zone = 'UTC'
 end
+
+# use your own (e.g. from account with all features enabled) or the default
+RPXNow.api_key = (File.exist?('config/rpx_now_api_key') ? File.read('config/rpx_now_api_key').strip : 'dc1ea8b9232b1554a78a99321ebc1f9086df08e7')

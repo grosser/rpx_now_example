@@ -1,0 +1,34 @@
+0.6.12
+-----
+ * url encode obstrusive popup code token-url
+0.6.0
+-----
+ * removed optional api key as parameter: RPXNow.user_data(token, api_key, options) --> RPXNow.user_data(token, options), you may use :apiKey=>... instead
+
+0.5.9
+-----
+  * Switched from Get to Post requests
+
+0.5.0
+----
+  * ApiError is raised when API KEY was invalid (before did only return nil)
+  * ServerError is now seperated into ApiError and ServiceUnavailableError
+
+0.4.2
+----
+  * default IDs are strings, not integers, since RPX supports both
+  * Added username field to standart parameters
+
+0.4
+----
+  * The RPXNow.api_version= can be set globally
+  * Most methods now support :api_version=>'123', so you can specify the api_version on each call
+	* Added support for unobtrusive code generation. This will make the gem play nicely with developers creating unobtrusive pages with frameworks such as jQuery;
+	* The RPXNOW JSON responses are now parsed by Florian Frank JSON gem (http://json.rubyforge.org/);
+	* Removed the dependency of ActiveSupport. However, if present, ActiveSupport will be used due to its convenience methods Array#to_query and Hash#to_query.
+	* Added support for multiple versions of the widget. By default, everything will point to version 2;
+	* The specs have been updated.
+
+0.3
+----
+	* RPXNow::ServerError will be thrown when something is invalid/goes wrong, so watch out (not for invalid tokens in user_data)...
