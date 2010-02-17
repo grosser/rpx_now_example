@@ -5,9 +5,9 @@ This is an example app showing some basic features of the [RPXNow Rails plugin/g
 
 Setup
 =====
-    sudo gem install sqlite3
     git clone git@github.com:grosser/rpx_now_example.git
     cd rpx_now_example
+    rake gems:install
     rake db:migrate
     ./script/server
 
