@@ -13,7 +13,9 @@ class UsersController < ApplicationController
   end
 
   def create
+    puts params.inspect
     if data = RPXNow.user_data(params[:token])
+      puts data.inspect
       data = {:name => data[:username], :email => data[:email], :identifier => data[:identifier]}
       self.current_user = User.find_by_identifier(data[:identifier]) || User.create!(data)
       redirect_to '/'

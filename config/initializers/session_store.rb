@@ -1,4 +1,8 @@
-ActionController::Base.session = {
-  :key         => '_rpx_now_example_session',
-  :secret      => '126e8d1ffdab391422ba821ef1a1daf3ae376a0b2a019d55984a12043c74fd0c7a839476ab5225cd19ae0d56c34e37561032e1d6fb18e3055134d631a243d922'
-}
+# Be sure to restart your server when you modify this file.
+
+RpxNowExample::Application.config.session_store :cookie_store, :key => '_rpx_now_example_session'
+
+# Use the database for sessions instead of the cookie-based default,
+# which shouldn't be used to store highly confidential information
+# (create the session table with "rake db:sessions:create")
+# RpxNowExample::Application.config.session_store :active_record_store

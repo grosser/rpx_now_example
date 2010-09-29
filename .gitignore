@@ -2,3 +2,4 @@ log
 tmp
 config/rpx_now_api_key
 db/*.sqlite3
+.bundle

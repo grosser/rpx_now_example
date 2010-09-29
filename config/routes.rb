@@ -1,4 +1,4 @@
-ActionController::Routing::Routes.draw do |map|
-  map.root :controller => :users
-  map.resources :users
+RpxNowExample::Application.routes.draw do
+  root :to => "users#index"
+  resources :users
 end
