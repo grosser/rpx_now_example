@@ -18,7 +18,7 @@ TODO
 ====
  - show more advanced features
 
-Original Author
+Author
 ======
 [Martin Mazur](http://www.twitter.com/m_mazur)  
 m.m@upplopp.se
