@@ -8,7 +8,7 @@ Setup
 =====
     git clone git@github.com:mazur/rpx_now_example.git
     cd rpx_now_example
-    bundle
+    bundle install
     rake db:migrate
     script/rails server
 
