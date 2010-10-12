@@ -7,7 +7,7 @@
     <div>
       <div><%= link_to 'Home', '/' %></div>
       <div><%= render 'layouts/user' %></div>
-      <%= render 'layouts/flash' %>
+      <%= render 'layouts/flash', :locals => { :flash => flash } %>
     </div>
 
     <br />
